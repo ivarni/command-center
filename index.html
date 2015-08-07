@@ -8,6 +8,7 @@
     <button id="b">Send</button>
 
     <script>
+        var socket = io('https://c0mmand-center.herokuapp.com');
         document.getElementById('b').addEventListener('click', function() {
             socket.emit('code', document.getElementById('m').value);
         });
