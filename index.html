@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+<head>
+    <title>Command Center</title>
+</head>
+<body>
+    <input id="m" autocomplete="off" />
+    <button id="b">Send</button>
+
+    <script>
+        document.getElementById('b').addEventListener('click', function() {
+            socket.emit('code', document.getElementById('m').value);
+        });
+    </script>
+</body>
+</html>
