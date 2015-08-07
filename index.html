@@ -6,7 +6,7 @@
 <body>
     <input id="m" autocomplete="off" />
     <button id="b">Send</button>
-
+    <script src="/socket.io/socket.io.js"></script>
     <script>
         var socket = io('https://c0mmand-center.herokuapp.com');
         document.getElementById('b').addEventListener('click', function() {
